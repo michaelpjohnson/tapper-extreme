@@ -47,6 +47,10 @@ class ViewController: UIViewController {
             updateTapsLabel()
         }
     }
+    
+    @IBAction func textFieldDoneEditing(sender: UITextField!) {
+        sender.resignFirstResponder()
+    }
 
     func restartGame() {
         maxTaps = 0
